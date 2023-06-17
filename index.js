@@ -1,12 +1,7 @@
 require('dotenv').config();
-const Server = require('./models/server');
+const Server =require('./models/server')
 const { dbConnection } = require('./dataBase/config');
 
-const server = new Server();
+const server = new Server() //importamos el objeto
 
-const port = process.env.PORT || 8080;
-
-server.listen(port);
-
-dbConnection();
-
+server.listen()
