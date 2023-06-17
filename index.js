@@ -4,4 +4,4 @@ const { dbConnection } = require('./dataBase/config');
 
 const server = new Server() //importamos el objeto
 
-server.listen()
+server.listen(8080)
